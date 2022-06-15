@@ -2,7 +2,7 @@
 # 2. Use sed -i to replace #PermitRootLogin yes with PermitRootLogin no 
 #    in the /etc/shh/sshd_config file
 # 3. Print out to file using cat to verify the change.
-# 4. Restart the server and exit
+# 4. Restart the sshd and exit
 
 # ssh username@ip-address, example...
 ssh banner@172.16.238.12
@@ -12,7 +12,7 @@ ssh banner@172.16.238.12
 # Use :wq! to save
 ssh vi /etc/ssh/sshd_config
 
-# Restart the server
+# Restart the sshd
 sudo systemctl restart sshd
 
 
